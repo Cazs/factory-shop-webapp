@@ -1,0 +1,456 @@
+extends ../layouts/default
+
+block content
+	//- Header
+	header.masthead
+		.container
+			.intro-text
+				.intro-lead-in Welcome! Our website is currently under contruction.
+				.intro-heading.text-uppercase Coming Soon!
+				a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href="#services") Tell Me More
+	//- Services
+	section#services
+		.container
+			.row
+				.col-lg-12.text-center
+					h2.section-heading.text-uppercase Services
+					h3.section-subheading.text-muted Factoryshop partners with some of South Africa's best manufacturers to bring you 
+						| South Africa's highest quality products at a fraction of their normal retail price. 
+			.row.text-center
+				.col-md-4
+					span.fa-stack.fa-4x
+						i.fa.fa-circle.fa-stack-2x.text-primary
+						i.fa.fa-shopping-cart.fa-stack-1x.fa-inverse
+					h4.service-heading Browse Shops
+					p.text-muted
+						| Buy merchendise directly from the factory using our Factoryshop&copy; platform.
+				.col-md-4
+					span.fa-stack.fa-4x
+						i.fa.fa-circle.fa-stack-2x.text-primary
+						i.fa.fa-laptop.fa-stack-1x.fa-inverse
+					h4.service-heading Verification
+					p.text-muted
+						| All our factories are verified so you can always be sure that you're buying from a legitimate merchant.
+				.col-md-4
+					span.fa-stack.fa-4x
+						i.fa.fa-circle.fa-stack-2x.text-primary
+						i.fa.fa-lock.fa-stack-1x.fa-inverse
+					h4.service-heading Security
+					p.text-muted
+						| All our communication with our web servers (and payment gateways) are encrypted using 256bit AES SSL technology.
+	//- Portfolio Grid
+	//- section#portfolio.bg-light
+	//- 	.container
+	//- 		.row
+	//- 			.col-lg-12.text-center
+	//- 				h2.section-heading.text-uppercase Portfolio
+	//- 				h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+	//- 		.row
+	//- 			.col-md-4.col-sm-6.portfolio-item
+	//- 				a.portfolio-link(data-toggle="modal" href="#portfolioModal1")
+	//- 					.portfolio-hover
+	//- 						.portfolio-hover-content
+	//- 							i.fa.fa-plus.fa-3x
+	//- 					img.img-fluid(src="images/portfolio/01-thumbnail.jpg" alt="")
+	//- 				.portfolio-caption
+	//- 					h4 Threads
+	//- 					p.text-muted Illustration
+	//- 			.col-md-4.col-sm-6.portfolio-item
+	//- 				a.portfolio-link(data-toggle="modal" href="#portfolioModal2")
+	//- 					.portfolio-hover
+	//- 						.portfolio-hover-content
+	//- 							i.fa.fa-plus.fa-3x
+	//- 					img.img-fluid(src="images/portfolio/02-thumbnail.jpg" alt="")
+	//- 				.portfolio-caption
+	//- 					h4 Explore
+	//- 					p.text-muted Graphic Design
+	//- 			.col-md-4.col-sm-6.portfolio-item
+	//- 				a.portfolio-link(data-toggle="modal" href="#portfolioModal3")
+	//- 					.portfolio-hover
+	//- 						.portfolio-hover-content
+	//- 							i.fa.fa-plus.fa-3x
+	//- 					img.img-fluid(src="images/portfolio/03-thumbnail.jpg" alt="")
+	//- 				.portfolio-caption
+	//- 					h4 Finish
+	//- 					p.text-muted Identity
+	//- 			.col-md-4.col-sm-6.portfolio-item
+	//- 				a.portfolio-link(data-toggle="modal" href="#portfolioModal4")
+	//- 					.portfolio-hover
+	//- 						.portfolio-hover-content
+	//- 							i.fa.fa-plus.fa-3x
+	//- 					img.img-fluid(src="images/portfolio/04-thumbnail.jpg" alt="")
+	//- 				.portfolio-caption
+	//- 					h4 Lines
+	//- 					p.text-muted Branding
+	//- 			.col-md-4.col-sm-6.portfolio-item
+	//- 				a.portfolio-link(data-toggle="modal" href="#portfolioModal5")
+	//- 					.portfolio-hover
+	//- 						.portfolio-hover-content
+	//- 							i.fa.fa-plus.fa-3x
+	//- 					img.img-fluid(src="images/portfolio/05-thumbnail.jpg" alt="")
+	//- 				.portfolio-caption
+	//- 					h4 Southwest
+	//- 					p.text-muted Website Design
+	//- 			.col-md-4.col-sm-6.portfolio-item
+	//- 				a.portfolio-link(data-toggle="modal" href="#portfolioModal6")
+	//- 					.portfolio-hover
+	//- 						.portfolio-hover-content
+	//- 							i.fa.fa-plus.fa-3x
+	//- 					img.img-fluid(src="images/portfolio/06-thumbnail.jpg" alt="")
+	//- 				.portfolio-caption
+	//- 					h4 Window
+	//- 					p.text-muted Photography
+	//- About
+	section#about
+		.container
+			.row
+				.col-lg-12.text-center
+					h2.section-heading.text-uppercase About
+					//h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+			.row
+				.col-lg-12
+					ul.timeline
+						li
+							.timeline-image
+								img.rounded-circle.img-fluid(src="images/about/1.jpg" alt="")
+							.timeline-panel
+								.timeline-heading
+									//h4 2009-2011
+									h4.subheading Our Story
+								.timeline-body
+									p.text-muted
+										| Established in December 2017, Factoryshop connects businesses and South African consumers 
+										| directly with manufacturers of proudly South African products and raw materials. 
+										| We partner with some of South Africa’s best manufacturers in order to bring you some of 
+										| the highest quality products at a fraction of the retail price. 
+										| It is at our website that you will be able to purchase everything from construction materials to 
+										| beautifully handcrafted art at lower than factory prices.
+						li.timeline-inverted
+							.timeline-image
+								img.rounded-circle.img-fluid(src="images/about/3.jpg" alt="")
+							.timeline-panel
+								.timeline-heading
+									h4 Browse Our Catalog
+									//h4.subheading An Agency is Born
+								.timeline-body
+									p.text-muted
+										| Come and browse through the informative profiles of various manufacturing businesses in and 
+										| around our country and explore everything that they have to offer at the click of a button.
+						//- li
+						//- 	.timeline-image
+						//- 		img.rounded-circle.img-fluid(src="images/about/3.jpg" alt="")
+						//- 	.timeline-panel
+						//- 		.timeline-heading
+						//- 			h4 December 2012
+						//- 			h4.subheading Transition to Full Service
+						//- 		.timeline-body
+						//- 			p.text-muted
+						//- 				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+						//- li.timeline-inverted
+						//- 	.timeline-image
+						//- 		img.rounded-circle.img-fluid(src="images/about/4.jpg" alt="")
+						//- 	.timeline-panel
+						//- 		.timeline-heading
+						//- 			h4 July 2014
+						//- 			h4.subheading Phase Two Expansion
+						//- 		.timeline-body
+						//- 			p.text-muted
+						//- 				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+						li.timeline-inverted
+							.timeline-image
+								h4
+									| Be Part
+									br
+									| Of Our
+									br
+									| Story!
+				//- Team
+	section#team.bg-light
+		.container
+			.row
+				.col-lg-12.text-center
+					h2.section-heading.text-uppercase Our Amazing Team
+					//h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+			.row
+				.col-sm-4
+					.team-member(style="width:240px;height:160px;background-color:orange;border-radius:10px;")
+						img.mx-auto.rounded-circle(src="images/team/1.jpg" alt="")
+						h4 Casper Ndlovu
+						p.text-muted(style="color:#fff !important;") Lead Software Engineer
+						ul.list-inline.social-buttons
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-twitter
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-facebook
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-linkedin
+				.col-sm-4
+					.team-member(style="width:240px;height:160px;background-color:orange;border-radius:10px;")
+						img.mx-auto.rounded-circle(src="images/team/2.jpg" alt="")
+						h4 Tauriq Peck
+						p.text-muted(style="color:#fff !important;") CEO
+						ul.list-inline.social-buttons
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-twitter
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-facebook
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-linkedin
+				.col-sm-4
+					.team-member(style="width:240px;height:160px;background-color:orange;border-radius:10px;")
+						img.mx-auto.rounded-circle(src="images/team/3.jpg" alt="")
+						h4 Nate
+						p.text-muted(style="color:#fff !important;") Lead Marketer
+						ul.list-inline.social-buttons
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-twitter
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-facebook
+							li.list-inline-item
+								a(href="#")
+									i.fa.fa-linkedin
+			//- .row
+			//- 	.col-lg-8.mx-auto.text-center
+			//- 		p.large.text-muted
+			//- 			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+				//- Clients
+	section.py-5
+		.container
+			.row
+				.col-md-3.col-sm-6
+					a(href="#")
+						img.img-fluid.d-block.mx-auto(src="images/logos/envato.jpg" alt="")
+				.col-md-3.col-sm-6
+					a(href="#")
+						img.img-fluid.d-block.mx-auto(src="images/logos/designmodo.jpg" alt="")
+				.col-md-3.col-sm-6
+					a(href="#")
+						img.img-fluid.d-block.mx-auto(src="images/logos/themeforest.jpg" alt="")
+				.col-md-3.col-sm-6
+					a(href="#")
+						img.img-fluid.d-block.mx-auto(src="images/logos/creative-market.jpg" alt="")
+				//- Contact
+	section#contact
+		.container
+			.row
+				.col-lg-12.text-center
+					h2.section-heading.text-uppercase Contact Us
+					//h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+			.row
+				.col-lg-12
+					form#contactForm(name="sentMessage" novalidate="")
+						.row
+							.col-md-6
+								.form-group
+									input#name.form-control(type="text" placeholder="Your Name *" required="" data-validation-required-message="Please enter your name.")
+									p.help-block.text-danger
+								.form-group
+									input#email.form-control(type="email" placeholder="Your Email *" required="" data-validation-required-message="Please enter your email address.")
+									p.help-block.text-danger
+								.form-group
+									input#phone.form-control(type="tel" placeholder="Your Phone *" required="" data-validation-required-message="Please enter your phone number.")
+									p.help-block.text-danger
+							.col-md-6
+								.form-group
+									textarea#message.form-control(placeholder="Your Message *" required="" data-validation-required-message="Please enter a message.")
+									p.help-block.text-danger
+							.clearfix
+							.col-lg-12.text-center
+								#success
+								button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type="submit") Send Message
+	//- Footer
+	footer
+		.container
+			.row
+				.col-md-4
+					span.copyright Copyright © Factoryshop 2018
+				.col-md-4
+					ul.list-inline.social-buttons
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-linkedin
+				.col-md-4
+					ul.list-inline.quicklinks
+						li.list-inline-item
+							a(href="#") Privacy Policy
+						li.list-inline-item
+							a(href="#") Terms of Use
+				//- // Portfolio Modals
+	//- Modal 1
+	//- #portfolioModal1.portfolio-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+	//- 	.modal-dialog
+	//- 		.modal-content
+	//- 			.close-modal(data-dismiss="modal")
+	//- 				.lr
+	//- 					.rl
+	//- 			.container
+	//- 				.row
+	//- 					.col-lg-8.mx-auto
+	//- 						.modal-body
+	//- 							// Project Details Go Here
+	//- 							h2.text-uppercase Factoryshop (Pty) Ltd
+	//- 							//p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+	//- 							img.img-fluid.d-block.mx-auto(src="images/portfolio/01-full.jpg" alt="")
+	//- 							p
+	//- 								| Factoryshop partners with some of South Africa's best manufacturers to bring you South Africa's highest quality products at a fraction of their retail price. Buy directly from the factory on the Factoryshop platform.
+	//- 							ul.list-inline
+	//- 								li Date: January 2018
+	//- 								li Client: Threads
+	//- 								li Category: Illustration
+	//- 							button.btn.btn-primary(data-dismiss="modal" type="button")
+	//- 								i.fa.fa-times
+	//- 								|                     Close Project
+	//- //- Modal 2
+	//- #portfolioModal2.portfolio-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+	//- 	.modal-dialog
+	//- 		.modal-content
+	//- 			.close-modal(data-dismiss="modal")
+	//- 				.lr
+	//- 					.rl
+	//- 			.container
+	//- 				.row
+	//- 					.col-lg-8.mx-auto
+	//- 						.modal-body
+	//- 							// Project Details Go Here
+	//- 							h2.text-uppercase Project Name
+	//- 							p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+	//- 							img.img-fluid.d-block.mx-auto(src="images/portfolio/02-full.jpg" alt="")
+	//- 							p
+	//- 								| Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+	//- 							ul.list-inline
+	//- 								li Date: January 2017
+	//- 								li Client: Explore
+	//- 								li Category: Graphic Design
+	//- 							button.btn.btn-primary(data-dismiss="modal" type="button")
+	//- 								i.fa.fa-times
+	//- 								|                     Close Project
+	//- //- Modal 3
+	//- #portfolioModal3.portfolio-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+	//- 	.modal-dialog
+	//- 		.modal-content
+	//- 			.close-modal(data-dismiss="modal")
+	//- 				.lr
+	//- 					.rl
+	//- 			.container
+	//- 				.row
+	//- 					.col-lg-8.mx-auto
+	//- 						.modal-body
+	//- 							// Project Details Go Here
+	//- 							h2.text-uppercase Project Name
+	//- 							p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+	//- 							img.img-fluid.d-block.mx-auto(src="images/portfolio/03-full.jpg" alt="")
+	//- 							p
+	//- 								| Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+	//- 							ul.list-inline
+	//- 								li Date: January 2017
+	//- 								li Client: Finish
+	//- 								li Category: Identity
+	//- 							button.btn.btn-primary(data-dismiss="modal" type="button")
+	//- 								i.fa.fa-times
+	//- 								|                     Close Project
+	//- //- Modal 4
+	//- #portfolioModal4.portfolio-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+	//- 	.modal-dialog
+	//- 		.modal-content
+	//- 			.close-modal(data-dismiss="modal")
+	//- 				.lr
+	//- 					.rl
+	//- 			.container
+	//- 				.row
+	//- 					.col-lg-8.mx-auto
+	//- 						.modal-body
+	//- 							// Project Details Go Here
+	//- 							h2.text-uppercase Project Name
+	//- 							p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+	//- 							img.img-fluid.d-block.mx-auto(src="images/portfolio/04-full.jpg" alt="")
+	//- 							p
+	//- 								| Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+	//- 							ul.list-inline
+	//- 								li Date: January 2017
+	//- 								li Client: Lines
+	//- 								li Category: Branding
+	//- 							button.btn.btn-primary(data-dismiss="modal" type="button")
+	//- 								i.fa.fa-times
+	//- 								|                     Close Project
+	//- //- Modal 5
+	//- #portfolioModal5.portfolio-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+	//- 	.modal-dialog
+	//- 		.modal-content
+	//- 			.close-modal(data-dismiss="modal")
+	//- 				.lr
+	//- 					.rl
+	//- 			.container
+	//- 				.row
+	//- 					.col-lg-8.mx-auto
+	//- 						.modal-body
+	//- 							// Project Details Go Here
+	//- 							h2.text-uppercase Project Name
+	//- 							p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+	//- 							img.img-fluid.d-block.mx-auto(src="images/portfolio/05-full.jpg" alt="")
+	//- 							p
+	//- 								| Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+	//- 							ul.list-inline
+	//- 								li Date: January 2017
+	//- 								li Client: Southwest
+	//- 								li Category: Website Design
+	//- 							button.btn.btn-primary(data-dismiss="modal" type="button")
+	//- 								i.fa.fa-times
+	//- 								|                     Close Project
+	//- //- Modal 6
+	//- #portfolioModal6.portfolio-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+	//- 	.modal-dialog
+	//- 		.modal-content
+	//- 			.close-modal(data-dismiss="modal")
+	//- 				.lr
+	//- 					.rl
+	//- 			.container
+	//- 				.row
+	//- 					.col-lg-8.mx-auto
+	//- 						.modal-body
+	//- 							// Project Details Go Here
+	//- 							h2.text-uppercase Project Name
+	//- 							p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+	//- 							img.img-fluid.d-block.mx-auto(src="images/portfolio/06-full.jpg" alt="")
+	//- 							p
+	//- 								| Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+	//- 							ul.list-inline
+	//- 								li Date: January 2017
+	//- 								li Client: Window
+	//- 								li Category: Photography
+	//- 							button.btn.btn-primary(data-dismiss="modal" type="button")
+	//- 								i.fa.fa-times
+	//- 								|                     Close Project
+	//- .container: .jumbotron
+	//- 	img(src='/images/logo.svg', width='160')
+	//- 	h1 Welcome
+	//- 	p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
+	//- 	p It includes the latest versions of
+	//- 		| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
+	//- 		| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
+	//- 	p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
+	//- 	hr
+	//- 	if user && user.canAccessKeystone
+	//- 		p
+	//- 			a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
+	//- 	else
+	//- 		p We have created a default Admin user for you with the email <strong>superuser</strong> and the password <strong>admin</strong>.
+	//- 		p
+	//- 			a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
+	//- 			|  to use the Admin UI.
+	//- 	hr
+	//- 	p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
+	//- 		| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
