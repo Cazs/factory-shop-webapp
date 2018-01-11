@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="367.50815"
-     inkscape:cy="584.39638"
+     inkscape:zoom="1.979899"
+     inkscape:cx="82.556407"
+     inkscape:cy="614.46262"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -56,13 +56,13 @@
      inkscape:label="bg"
      style="display:inline">
     <rect
-       style="opacity:0.478;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.5581947;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.478;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.25224167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4136"
-       width="632.99896"
-       height="163.71324"
-       x="69.929108"
-       y="350.1485"
-       inkscape:export-filename="C:\Workspace\FactoryShop\factory-shop-webapp\public\images\logo.png"
+       width="129.0192"
+       height="164.0192"
+       x="69.776131"
+       y="349.99551"
+       inkscape:export-filename="C:\Workspace\FactoryShop\factory-shop-webapp\public\favicon.png"
        inkscape:export-xdpi="128"
        inkscape:export-ydpi="128" />
   </g>
@@ -70,27 +70,26 @@
      inkscape:label="Text"
      inkscape:groupmode="layer"
      id="layer1">
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4138"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fff9ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       transform="matrix(1.0351419,0,0,1.1257582,-4.3092148,-46.500593)"><flowRegion
-         id="flowRegion4140"><rect
-           id="rect4142"
-           width="607.14282"
-           height="120"
-           x="82.85714"
-           y="362.36221"
-           style="fill:#fff9ff;fill-opacity:1;" /></flowRegion><flowPara
-         id="flowPara4144"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:124.00000095%;font-family:Ailerons;-inkscape-font-specification:Ailerons;fill:#fff9ff;fill-opacity:1;">FACTORYSHOP</flowPara></flowRoot>  </g>
+    <path
+       sodipodi:nodetypes="sscssssscccsssccs"
+       inkscape:connector-curvature="0"
+       id="path4159"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:124.00000095%;font-family:Ailerons;-inkscape-font-specification:Ailerons;letter-spacing:0px;word-spacing:0px;fill:#fff9ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 101.10839,378.15995 c -1.27974,0 -2.23955,1.5634 -2.23955,3.28315 l 0.37881,108.55413 13.33227,0 c 1.1731,0 1.86075,-3.80617 1.86075,-5.68225 l 0,-44.24429 c 0,-1.56341 0.85316,-2.65779 1.91962,-2.65779 l 5.11897,0 c 2.45285,0 3.5193,-1.71974 4.05253,-3.1268 l 2.55949,-10.1297 -13.65061,0 0,-32.08217 c 0,-1.40706 0.85316,-2.65778 1.81297,-2.65778 l 8.53163,0 c 2.45285,0 3.5193,-1.71974 4.05253,-3.12681 0.31993,-0.93804 1.70632,-5.31556 2.45284,-8.12969 z" />
+    <path
+       sodipodi:nodetypes="csscsscccssssccsccsscccscsscc"
+       inkscape:connector-curvature="0"
+       id="path4161"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:124.00000095%;font-family:Ailerons;-inkscape-font-specification:Ailerons;letter-spacing:0px;word-spacing:0px;fill:#fff9ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 165.73629,401.70045 c 0,0 1.01684,-2.27823 1.01684,-5.87405 l 0,-4.22119 c 0,-7.50433 -4.15917,-13.28367 -9.27815,-13.44001 l -8.79905,0 c -5.33227,0 -11.74465,5.5268 -11.74465,13.18747 l 0,11.2565 c 0,0 -0.31994,9.87337 3.41265,19.87915 l 14.18166,23.29705 c 0,0 4.44243,8.42207 4.44243,14.45321 l 0,12.50722 c 0,3.43948 -1.82732,5.8441 -4.05253,6.09727 -6.65897,0.7576 -7.60583,-3.41611 -7.67371,-6.69854 l -0.37882,-18.3159 c -1.91962,1.25072 -5.01233,3.28314 -5.65221,3.59582 -0.9598,0.7817 -3.26933,3.00653 -3.26933,6.60236 l 0,11.25649 c 0.10665,7.50434 5.42187,13.9804 10.54084,14.29308 l 8.79905,0 c 5.33227,0 10.60825,-7.01122 10.60825,-14.67189 l 0,-13.91428 c 0,0 -0.81649,-7.47426 -4.54908,-17.48004 l -9.04524,-15.22559 c 0,0 -7.2578,-12.07428 -7.30601,-18.48406 l -0.12627,-16.78825 c 0.0632,-5.08097 4.23745,-5.54274 6.47417,-5.65533 0,0 5.76899,0.68748 5.63089,5.65533 l -0.53572,19.27071 c 2.02627,-1.25072 7.30399,-10.58253 7.30399,-10.58253 z" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="border">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4.19999981;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 78.496031,507.47157 697.00526,506.87983 695.9951,358.38741 78.166899,357.02011 Z"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:6.329;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 77.040587,508.66084 192.48662,508.05974 192.29807,357.2198 76.979153,355.83088 Z"
        id="path4146"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />

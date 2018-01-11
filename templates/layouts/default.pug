@@ -15,7 +15,7 @@ html
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
-		//link(href="/styles/site.css", rel="stylesheet")
+		link(href="/styles/site.css", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
@@ -55,7 +55,8 @@ html
 			nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top(role="navigation")
 				.container
 					a.navbar-brand.js-scroll-trigger(href="#page-top")
-						img(src="images/logo.png", style="width:180px;height:50px;")
+						div#brand
+							img(src="/images/logo.png", style="width:180px;height:50px;")
 					button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
 						| Menu
 						i.fa.fa-bars
@@ -88,6 +89,22 @@ html
 
 		//- FOOTER
 		.container: #footer
+			//- Footer
+			//footer
+			.row
+				.col-md-4
+					span.copyright Copyright © Factoryshop 2018
+				.col-md-4
+					ul.list-inline.social-buttons
+						li.list-inline-item
+							a(href="https://www.facebook.com/factoryshopsa/")
+								i.fa.fa-facebook
+				.col-md-4
+					ul.list-inline.quicklinks
+						li.list-inline-item
+							a(href="#") Privacy Policy
+						li.list-inline-item
+							a(href="#") Terms of Use
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
 			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
 
