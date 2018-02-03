@@ -89,12 +89,12 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback)
 				if(err)
 				{
 					console.log('could not send email to [%s]: %s', enquiry.email, err);
+					if(callback)
+						callback(err);
 				}else
 				{
 					console.log('email successfully sent to [%s] ', enquiry.email);
 				}
-				if(callback)
-					callback(err);
 			});
 		}
 	);

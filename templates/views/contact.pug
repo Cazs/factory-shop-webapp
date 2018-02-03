@@ -1,34 +1,50 @@
-extends ../layouts/default
-
-block intro
-	.container
-		h1 Contact Us
-		
-block content
-	.container
-		if enquirySubmitted
-			h3 Thanks for getting in touch.
-		else
-			.row: .col-sm-8.col-md-6
-				form(method='post')
-					input(type='hidden', name='action', value='contact')
-					.form-group(class=validationErrors.name ? 'has-error' : null)
-						label Name
-						input(type='text', name='name.full', value=formData['name.full']).form-control
-					.form-group(class=validationErrors.email ? 'has-error' : null)
-						label Email
-						input(type='email', name='email', value=formData.email).form-control
-					.form-group
-						label Phone
-						input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control
-					.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
-						label What are you contacting us about?
-						select(name='enquiryType').form-control
-							option(value='') (select one)
+if enquirySubmitted
+	h3 Thanks for getting in touch.
+else
+	form(method='post', action='contact')
+		.row
+			.col-sm-8.col-md-6
+				input(type='hidden', name='action', value='contact')
+				.form-group
+					//(class=validationErrors.name ? 'has-error' : null)
+					label Name
+					if(formData)
+						input#name.form-control(type='text', name='name.full', value=formData['name.full'],  placeholder="Your Name *", required="", data-validation-required-message="Please enter your name.")
+					else 
+						input#name.form-control(type='text', name='name.full',  placeholder="Your Name *", required="", data-validation-required-message="Please enter your name.")
+					p.help-block.text-danger
+				.form-group
+					//(class=validationErrors.email ? 'has-error' : null)
+					label Email
+					if(formData)
+						input#email.form-control(type='email', name='email', value=formData.email, placeholder="Your Email *", required="", data-validation-required-message="Please enter your email address.")
+					else
+						input#email.form-control(type='email', name='email', placeholder="Your Email *", required="", data-validation-required-message="Please enter your email address.")
+					p.help-block.text-danger
+				.form-group
+					label Phone
+					if(formData)
+						input#phone.form-control(type='text', name='phone', value=formData.phone, placeholder="Your Phone Number (optional)")
+					else
+						input#phone.form-control(type='text', name='phone', placeholder="Your Phone Number (optional)")
+					p.help-block.text-danger
+				.form-group
+					//(class=validationErrors.enquiryType ? 'has-error' : null)
+					label What are you contacting us about?
+					select.form-control(name='enquiryType', required="")
+						option(value='') What are you contacting us about?
+						if(enquiryTypes)
 							each type in enquiryTypes
 								option(value=type.value, selected=formData.enquiryType == type.value)= type.label
-					.form-group(class=validationErrors.message ? 'has-error' : null)
-						label Message
-						textarea(name='message', placeholder='Leave us a message...' rows=4).form-control= formData.message
-					.form-actions
-						button(type='submit').btn.btn-primary Send
+					p.help-block.text-danger
+			.col-sm-4.col-md-6
+				.form-group
+					//(class=validationErrors.message ? 'has-error' : null)
+					label Message
+					if(formData)
+						textarea#message.form-control(name='message', placeholder='Leave us a message...', rows=4, required="", data-validation-required-message="Please enter a message.")= formData.message
+					else
+						textarea#message.form-control(name='message', placeholder='Leave us a message...', rows=4, required="", data-validation-required-message="Please enter a message.")
+					p.help-block.text-danger
+				.form-actions
+					button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit').btn.btn-primary Send

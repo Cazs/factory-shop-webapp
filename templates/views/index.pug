@@ -8,6 +8,12 @@ block content
 				.intro-lead-in Welcome! Our website is currently under contruction, please check regularly for updates.
 				.intro-heading.text-uppercase Coming Soon!
 				a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href="#services") Tell Me More
+	//- +flash-message('this is a test', 'info')
+	#myModal.modal
+		// Modal content
+		.modal-content
+			span.close ×
+			p#modal-msg Message..
 	//- Services
 	section#services
 		.container
@@ -239,42 +245,7 @@ block content
 	//- 					img.img-fluid.d-block.mx-auto(src="images/logos/creative-market.jpg" alt="")
 	//- Contact
 	section#contact
-		.container
-			.row
-				.col-lg-12.text-center
-					h2.section-heading.text-uppercase Contact Us
-					//h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-			if enquirySubmitted
-				h3 Thanks for getting in touch.
-			else
-			.row: .col-sm-8.col-md-6
-				form(method='post', action='contact')
-					input(type='hidden', name='action', value='contact')
-					.form-group(class=validationErrors.name ? 'has-error' : null)
-						label Name
-						input#name.form-control(type='text', name='name.full', value=formData['name.full'],  placeholder="Your Name *", required="", data-validation-required-message="Please enter your name.").form-control
-						p.help-block.text-danger
-					.form-group(class=validationErrors.email ? 'has-error' : null)
-						label Email
-						input#email.form-control(type='email', name='email', value=formData.email, placeholder="Your Email *", required="", data-validation-required-message="Please enter your email address.").form-control
-						p.help-block.text-danger
-					.form-group
-						label Phone
-						input#phone.form-control(type='text', name='phone', value=formData.phone, placeholder="Your Phone Number (optional)").form-control
-						p.help-block.text-danger
-					.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
-						label What are you contacting us about?
-						select.form-control(name='enquiryType', required="").form-control
-							option(value='') What are you contacting us about?
-							each type in enquiryTypes
-								option(value=type.value, selected=formData.enquiryType == type.value)= type.label
-						p.help-block.text-danger
-					.form-group(class=validationErrors.message ? 'has-error' : null)
-						label Message
-						textarea#message.form-control(name='message', placeholder='Leave us a message...', rows=4, required="", data-validation-required-message="Please enter a message.").form-control= formData.message
-						p.help-block.text-danger
-					.form-actions
-						button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit').btn.btn-primary Send
+		include ./contact
 	//- // Portfolio Modals
 	//- Modal 1
 	//- #portfolioModal1.portfolio-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
