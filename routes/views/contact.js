@@ -33,7 +33,7 @@ exports = module.exports = function (req, res, view)
 			} else
 			{
 				locals.enquirySubmitted = true;
-				res.redirect('/?msg=successfully sent enquiry, one of our consultants will get back to you soon!');
+				res.redirect('http://www.factoryshopza.co.za/?msg=successfully sent enquiry, one of our consultants will get back to you soon!');
 			}
 		});
 	});
