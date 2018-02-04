@@ -65,7 +65,7 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback)
 					callback(err);
 				return;
 			}
-			console.log('email sent to system email.');
+			console.log('email sent to system email [enquiries@factoryshopza.co.za].');
 			//send email to user/client as well.
 			var msg = "<p>Hi " + enquiry.name.first+",<br/>We've received your enquiry about " + enquiry.enquiryType
 						" and one of our consultants will get back to you soon.</p><br/><br/>";
