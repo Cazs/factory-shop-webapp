@@ -43,12 +43,12 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback)
 	var request = mailjet.post("send").request(
 	{
 		"FromName": enquiry.name.first+" "+enquiry.name.last,
-		"FromEmail": "system@pioneerdesigns.co.za",
+		"FromEmail": "enquiries@factoryshopza.co.za",
 		"Subject": "New Enquiry From " + enquiry.name.first + " " + enquiry.name.last,
 		//"Text-part": enquiry.name.first + " " + enquiry.name.last +" says,\n" + enquiry.message.html,
 		"Html-part": "<p style='font-size:22px;'>"+enquiry.name.first+" "+enquiry.name.last+" left a message of type <strong>"+enquiry.enquiryType +"</strong>,<br/><br/></p>"
-					+ "<h4>Phone:<i>" + enquiry.phone + "</i></h4><br/>"
-					+ "<h4>e-Mail:<i>" + enquiry.email + "</i></h4><br/>"
+					+ (enquiry.phone?"<h4>Phone:<i>" + enquiry.phone + "</i></h4><br/>":"")
+					+ "<h4>e-Mail Address:<i>" + enquiry.email + "</i></h4><br/>"
 					+ "<h2>Message:</h2><br/><p>" + enquiry.message.html + "</p><br/><br/>"+"Kindest Regards,<br/>Factoryshop Mailing System.",
 		"Recipients":
 		[
@@ -74,7 +74,7 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback)
 			request = mailjet.post("send").request(
 			{
 				"FromName": "Factoryshop",
-				"FromEmail": "system@pioneerdesigns.co.za",
+				"FromEmail": "enquiries@factoryshopza.co.za",
 				"Subject": "Enquiry Receipt",
 				//"Text-part": msg,
 				"Html-part": msg,
