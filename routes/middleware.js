@@ -17,8 +17,10 @@ var _ = require('lodash');
 	the navigation in the header, you may wish to change this array
 	or replace it with your own templates / logic.
 */
-exports.initLocals = function (req, res, next) {
-	res.locals.navLinks = [
+exports.initLocals = function (req, res, next)
+{
+	res.locals.navLinks =
+	[
 		{ label: 'Home', key: 'home', href: '/' },
 		//{ label: 'Gallery', key: 'gallery', href: '/gallery' },
 		{ label: 'Services', key: 'services', href: '#services' },
@@ -26,7 +28,8 @@ exports.initLocals = function (req, res, next) {
 		//{ label: 'Portfolio', key: 'portfolio', href: '#portfolio' },
 		{ label: 'About', key: 'about', href: '#about' },
 		//{ label: 'Team', key: 'team', href: '#team' },
-		{ label: 'Contact', key: 'contact', href: '#contact' }
+		{ label: 'Contact', key: 'contact', href: '#contact' },
+		{ label: 'Dashboard', key: 'dashboard', href: '/dashboard' }
 	];
 	res.locals.user = req.user;
 	next();
@@ -35,8 +38,10 @@ exports.initLocals = function (req, res, next) {
 /**
 	Fetches and clears the flashMessages before a view is rendered
 */
-exports.flashMessages = function (req, res, next) {
-	var flashMessages = {
+exports.flashMessages = function (req, res, next)
+{
+	var flashMessages =
+	{
 		info: req.flash('info'),
 		success: req.flash('success'),
 		warning: req.flash('warning'),
@@ -50,11 +55,14 @@ exports.flashMessages = function (req, res, next) {
 /**
 	Prevents people from accessing protected pages when they're not signed in
  */
-exports.requireUser = function (req, res, next) {
-	if (!req.user) {
+exports.requireUser = function (req, res, next)
+{
+	if (!req.user)
+	{
 		req.flash('error', 'Please sign in to access this page.');
 		res.redirect('/keystone/signin');
-	} else {
+	} else
+	{
 		next();
 	}
 };
